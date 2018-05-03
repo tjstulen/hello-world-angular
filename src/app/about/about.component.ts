@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'about-comp',
@@ -12,9 +13,10 @@ export class AboutComponent implements OnInit, OnDestroy {
   constructor() { }
   @Input() abouttxt: string;  
   
-  aString: string = "This a test";
+  aString: string = "This an app from my Angular Class";
 
   ngOnInit() {
+
   }
   ngOnDestroy() {
 
